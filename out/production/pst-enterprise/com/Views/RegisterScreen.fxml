@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controllers.RegisterPageController">
+    <Pane layoutX="14.0" layoutY="60.0" prefHeight="365.0" prefWidth="331.0">
+        <children>
+            <Label fx:id="nameRegisterRequired" layoutX="160.0" layoutY="88.0" text="*" textFill="RED" visible="false" />
+            <Label fx:id="usernameRegisterRequired" layoutX="160.0" layoutY="239.0" text="*" textFill="RED" visible="false" />
+            <Label fx:id="passwordRegisterRequired" layoutX="320.0" layoutY="240.0" text="*" textFill="RED" visible="false" />
+            <Label fx:id="registerPrompt" alignment="CENTER" layoutY="305.0" prefHeight="59.0" prefWidth="331.0" text="RegisterPrompt" textFill="#2cd117" visible="false">
+                <font>
+                    <Font name="System Italic" size="18.0" />
+                </font>
+            </Label>
+         <ImageView fitHeight="644.0" fitWidth="984.0" layoutX="-8.0" layoutY="-79.0">
+            <image>
+               <Image url="@Lovepik_com-400236936-memphis-style-geometric-shape.png" />
+            </image>
+         </ImageView>
+        </children>
+    </Pane>
+   <VBox layoutX="296.0" layoutY="-2.0" prefHeight="606.0" prefWidth="408.0" style="-fx-background-color: #4287f5;">
+      <children>
+         <Pane prefHeight="286.0" prefWidth="182.0">
+            <children>
+               <Label fx:id="usernameLoginRequired" layoutX="180.0" layoutY="84.0" text="*" textFill="RED" visible="false" />
+               <Label fx:id="passwordLoginRequired" layoutX="180.0" layoutY="137.0" text="*" textFill="RED" visible="false" />
+               <Label fx:id="loginPrompt" alignment="CENTER" layoutY="205.0" prefHeight="83.0" prefWidth="182.0" text="LoginPrompt" textFill="#eb1e1e" visible="false" />
+                  <TextField fx:id="nameTextFieldRegister" layoutX="54.0" layoutY="192.0" style="-fx-background-radius: 20px;" />
+                  <Button fx:id="registerBtn" layoutX="167.0" layoutY="451.0" mnemonicParsing="false" onAction="#createUser" prefHeight="23.0" prefWidth="79.0" style="-fx-background-radius: 20; -fx-background-color: #f23f69;" text="Sign up" textFill="WHITE">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Button>
+                  <Label layoutX="56.0" layoutY="177.0" text="Name" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <TextField fx:id="usernameTextFieldRegister" layoutX="54.0" layoutY="343.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="56.0" layoutY="325.0" text="Username" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <Label layoutX="217.0" layoutY="325.0" text="Password" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <PasswordField fx:id="passwordFieldRegister" layoutX="214.0" layoutY="343.0" style="-fx-background-radius: 20;" />
+                  <Label alignment="CENTER" layoutX="95.0" layoutY="122.0" prefHeight="25.0" prefWidth="223.0" text="Register" textFill="WHITE">
+                      <font>
+                          <Font name="Lato Semibold" size="34.0" />
+                      </font>
+                  </Label>
+                  <TextField fx:id="addressTextFieldRegister" editable="false" layoutX="52.0" layoutY="288.0" opacity="0.3" prefHeight="23.0" prefWidth="149.0" style="-fx-background-radius: 20;" text="Only for legal user">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </TextField>
+                  <TextField fx:id="companyCodeTextFieldRegister" editable="false" layoutX="214.0" layoutY="288.0" opacity="0.3" prefHeight="23.0" prefWidth="149.0" style="-fx-background-radius: 20;" text="Only for legal user">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </TextField>
+                  <TextField fx:id="surnameTextFieldRegister" layoutX="54.0" layoutY="240.0" style="-fx-background-radius: 20;" />
+                  <Label layoutX="54.0" layoutY="223.0" text="Surname" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <Label layoutX="214.0" layoutY="271.0" text="Company code" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <Label layoutX="54.0" layoutY="271.0" text="Address" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <RadioButton fx:id="individualUserToggle" layoutX="237.0" layoutY="391.0" mnemonicParsing="false" onAction="#toggleIndividualUser" text="Individual" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </RadioButton>
+                  <RadioButton fx:id="legalUserToggle" layoutX="178.0" layoutY="391.0" mnemonicParsing="false" text="Legal" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </RadioButton>
+                  <TextField fx:id="emailTextFieldRegister" layoutX="214.0" layoutY="193.0" style="-fx-background-radius: 20;" />
+                  <Label fx:id="emailLabel" layoutX="216.0" layoutY="178.0" text="Email" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <TextField fx:id="phoneTextFieldRegister" layoutX="214.0" layoutY="241.0" style="-fx-background-radius: 20;" />
+                  <Label fx:id="phoneLabel" layoutX="214.0" layoutY="224.0" text="Phone" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+                  <Label fx:id="userTypeLabel" layoutX="115.0" layoutY="390.0" text="User type:" textFill="#cfffa5">
+                  <font>
+                     <Font name="Lato Semibold" size="12.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+      </children>
+   </VBox>
+</AnchorPane>

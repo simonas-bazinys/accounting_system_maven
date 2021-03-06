@@ -1,5 +1,6 @@
 package com;
 
+import com.Controllers.LoginPageController;
 import com.Models.FinanceSystem;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,12 +10,17 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    @Override
-    public void start(Stage primaryStage) throws Exception{
+    public static Stage primaryStage = new Stage();
 
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+    @Override
+    public void start(Stage stage) throws Exception{
+
+        Parent root = FXMLLoader.load(getClass().getResource("Views/LoginScreen.fxml"));
+
+      //  LoginPageController loginPageController = root.getController();
+
+        primaryStage.setTitle("PST-Enterprise");
+        primaryStage.setScene(new Scene(root, 1000, 600));
         primaryStage.show();
     }
 

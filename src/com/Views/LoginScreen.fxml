@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Controllers.LoginPageController">
+
+    <children>
+      <VBox prefHeight="606.0" prefWidth="408.0" style="-fx-background-color: #4287f5;">
+         <children>
+              <Pane prefHeight="286.0" prefWidth="182.0">
+                  <children>
+                      <TextField fx:id="usernameTextFieldLogin" alignment="CENTER" layoutX="92.0" layoutY="245.0" prefHeight="33.0" prefWidth="224.0" style="-fx-background-radius: 20px;" text="Username">
+                     <font>
+                        <Font name="Lato Semibold" size="12.0" />
+                     </font></TextField>
+                      <Button fx:id="loginBtn" layoutX="92.0" layoutY="337.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="224.0" style="-fx-background-radius: 20px; -fx-background-color: #42f593;" onAction="#validateUser" text="Sign in" />
+                      <PasswordField fx:id="passwordFieldLogin" alignment="CENTER" layoutX="92.0" layoutY="292.0" prefHeight="33.0" prefWidth="224.0" style="-fx-background-radius: 20px;" text="Password" />
+                      <Label alignment="CENTER" layoutX="95.0" layoutY="169.0" prefHeight="50.0" prefWidth="218.0" text="Welcome" textFill="WHITE">
+                          <font>
+                              <Font name="Lato Semibold" size="34.0" />
+                          </font>
+                      </Label>
+                      <Label fx:id="usernameLoginRequired" layoutX="180.0" layoutY="84.0" text="*" textFill="RED" visible="false" />
+                      <Label fx:id="passwordLoginRequired" layoutX="180.0" layoutY="137.0" text="*" textFill="RED" visible="false" />
+                      <Label fx:id="loginPrompt" alignment="CENTER" layoutY="205.0" prefHeight="83.0" prefWidth="182.0" text="LoginPrompt" textFill="#eb1e1e" visible="false" />
+                  </children>
+              </Pane>
+         </children>
+      </VBox>
+      <ImageView fitHeight="577.0" fitWidth="627.0" layoutX="418.0" layoutY="13.0">
+         <image>
+            <Image url="@EFLthgOXkAAvcH8.png" />
+         </image>
+      </ImageView>
+
+    </children>
+
+
+</AnchorPane>
