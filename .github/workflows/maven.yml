@@ -26,7 +26,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Step 3 - Have Github Actions Build Maven Project 
-      run: mvn javafx:compile
+      run: mvn clean javafx:compile
       
     - name: Step 4 - List the current directory
       run: ls -a
@@ -35,4 +35,7 @@ jobs:
       run: |
        cd target
        ls -a
+       
+    - name: Step 6 - Run the unit tests
+      run: mvn test
         
