@@ -37,5 +37,5 @@ jobs:
        ls -a
        
     - name: Step 6 - Run the unit tests
-      run: mvn test
+      run: mvn -B test --file pom.xml
         
