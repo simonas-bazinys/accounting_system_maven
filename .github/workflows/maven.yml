@@ -23,6 +23,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
+        distribution: 'adopt'
         
     - name: Step 3 - Have Github Actions Build Maven Project 
       run: mvn -B package --file pom.xml
