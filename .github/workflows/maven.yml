@@ -26,7 +26,7 @@ jobs:
         distribution: 'adopt'
         
     - name: Step 3 - Have Github Actions Build Maven Project 
-      run: mvn -B package --file pom.xml
+      run: mvn javafx:compile
       
     - name: Step 4 - List the current directory
       run: ls -a
