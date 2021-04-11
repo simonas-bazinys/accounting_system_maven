@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.accouting.controllers.SystemRootPageController">
+   <children>
+      <MenuBar layoutX="416.0" prefHeight="29.0" prefWidth="115.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Root categories">
+            <items>
+              <MenuItem fx:id="addRootCategoryBtn" mnemonicParsing="false" onAction="#loadRootCategoryAddDialog" text="Add" />
+                  <MenuItem fx:id="deleteRootCategoryBtn" mnemonicParsing="false" onAction="#loadRootCategoryDeleteDialog" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ListView fx:id="rootCategoriesList" layoutX="531.0" prefHeight="185.0" prefWidth="189.0" />
+      <Button fx:id="accessSelectedRootCategoryBtn" layoutX="531.0" layoutY="185.0" mnemonicParsing="false" onAction="#accessSelectedRootCategory" prefHeight="38.0" prefWidth="189.0" text="Access selected root category" />
+      <Button fx:id="manageUserBtn" layoutY="362.0" mnemonicParsing="false" onAction="#loadUserManagementForm" prefHeight="57.0" prefWidth="213.0" text="Manage selected user">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="showSystemInfoBtn" layoutX="254.0" layoutY="442.0" mnemonicParsing="false" onAction="#loadSystemInformation" prefHeight="57.0" prefWidth="213.0" text="View system information">
+         <font>
+            <Font name="ArtifaktElement-Regular" size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="userLabel" layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="15.0" />
+      <ListView fx:id="allUsersList" layoutY="162.0" prefHeight="200.0" prefWidth="213.0" />
+      <Label fx:id="systemNameLabel" alignment="CENTER" layoutX="213.0" layoutY="159.0" prefHeight="100.0" prefWidth="319.0" text="Name">
+         <font>
+            <Font name="System Bold Italic" size="43.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentUserLabel" layoutX="8.0" layoutY="93.0" prefHeight="21.0" prefWidth="189.0" text="currentUser">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="userRemoveBtn" layoutY="124.0" mnemonicParsing="false" onAction="#removeUser" prefHeight="38.0" prefWidth="99.0" text="Remove" />
+   </children>
+</AnchorPane>
