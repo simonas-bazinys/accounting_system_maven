@@ -34,4 +34,4 @@ jobs:
     - name: Step 5 - Whats in the target directory?
       run: 
         cd target
-        la -a
+        ls -a
