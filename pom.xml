@@ -161,7 +161,7 @@
       </resource>
     </resources>
 
-    <testSourceDirectory>${project.basedir}/src/test</testSourceDirectory>
+    <testSourceDirectory>src/test/java/com/accouting</testSourceDirectory>
 
   </build>
 </project>
