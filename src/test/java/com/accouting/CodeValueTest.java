@@ -1,13 +1,10 @@
-package com.accouting;
-
-
 import com.accouting.utilities.DataValidity;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class CodeValue_tests {
+public class CodeValueTest {
         @Test
         public void numberWithLessThan6symbolShouldBeIncorrect()
         {
