@@ -161,5 +161,7 @@
       </resource>
     </resources>
 
+    <testSourceDirectory>src/test/java/com/accouting</testSourceDirectory>
+
   </build>
 </project>
