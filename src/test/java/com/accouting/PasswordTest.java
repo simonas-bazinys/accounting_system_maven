@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Password_tests {
+public class PasswordTest {
     @Test
     public void passwordWithLessThan15symbolShouldBeCorrect()
     {

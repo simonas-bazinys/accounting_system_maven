@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Name_test {
+public class NameTest {
     @Test
     public void nameWithLessThan30symbolShouldBeCorrect()
     {

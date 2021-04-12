@@ -8,7 +8,7 @@ import org.junit.Assert;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Alphabetical_string_tests {
+public class LettersTest {
 
     @Test
     public void stringWithNumbersShouldBeIncorrect()
