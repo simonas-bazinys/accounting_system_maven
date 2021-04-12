@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.accouting.AlertBoxTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 17.431 s <<< FAILURE! - in com.accouting.AlertBoxTest
-errorMessageAppearsIfCategoryNotSelected(com.accouting.AlertBoxTest)  Time elapsed: 3.362 s  <<< ERROR!
-org.testfx.api.FxRobotException: the query "#accessSelectedRootCategoryBtn" returned no nodes.
-	at com.accouting.AlertBoxTest.errorMessageAppearsIfCategoryNotSelected(AlertBoxTest.java:26)
-

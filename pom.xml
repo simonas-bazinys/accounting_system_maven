@@ -109,7 +109,7 @@
 
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>2.22.1</version>
+          <version>2.19.1</version>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
@@ -160,6 +160,8 @@
         <directory>src/main/java/resources</directory>
       </resource>
     </resources>
+
+    <testSourceDirectory>src/test/java/com/accouting</testSourceDirectory>
 
   </build>
 </project>

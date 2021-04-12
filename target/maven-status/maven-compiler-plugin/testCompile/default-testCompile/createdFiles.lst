@@ -1,12 +1,3 @@
-com\accouting\Alphabetical_string_tests.class
-com\accouting\StartProgramTest.class
-com\accouting\SystemRootPageControllerTest.class
-com\accouting\TestHelper.class
-com\accouting\LoginPageControllerTest.class
-com\accouting\Password_tests.class
-com\accouting\Phone_number_tests.class
-com\accouting\AlertBoxTest.class
-com\accouting\CodeValue_tests.class
-com\accouting\Valid_email_tests.class
-com\accouting\Name_test.class
-com\accouting\TestFXBase.class
+com\accouting\Phone_number_Test.class
+Alphabetical_string_Test.class
+com\accouting\Valid_email_Test.class

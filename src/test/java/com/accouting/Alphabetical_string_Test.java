@@ -1,6 +1,3 @@
-package com.accouting;
-
-
 import com.accouting.utilities.DataValidity;
 import org.junit.Test;
 import org.junit.Assert;
@@ -8,7 +5,7 @@ import org.junit.Assert;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Alphabetical_string_tests {
+public class Alphabetical_string_Test {
 
     @Test
     public void stringWithNumbersShouldBeIncorrect()

@@ -1,12 +1,10 @@
-package com.accouting;
-
 import com.accouting.utilities.DataValidity;
 import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
-public class Phone_number_tests {
+public class Phone_number_Test {
     @Test
     public void phoneNumberWithoutCountryCodeShouldBeIncorrect()
     {
