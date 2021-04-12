@@ -11,11 +11,11 @@ import javafx.stage.Stage;
 public class Main extends Application {
 
     public static Stage primaryStage = new Stage();
-
+    public static Parent root;
     @Override
     public void start(Stage stage) throws Exception{
 
-        Parent root = FXMLLoader.load(getClass().getResource("Views/LoginScreen.fxml"));
+        root = FXMLLoader.load(getClass().getResource("Views/LoginScreen.fxml"));
 
       //  LoginPageController loginPageController = root.getController();
 
